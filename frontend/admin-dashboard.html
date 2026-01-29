@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Admin Dashboard | InternFlow</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body onload="loadStudents()">
+    <div style="display: flex; min-height: 100vh;">
+        <aside style="width: 280px; background: rgba(0,0,0,0.3); border-right: 1px solid var(--glass-border); padding: 40px 25px;">
+            <h2 style="color: var(--primary); margin-bottom: 40px;">Admin</h2>
+            <nav>
+                <button class="btn btn-ghost" style="justify-content: flex-start; background: rgba(99,102,241,0.1);">📋 Applications</button>
+            </nav>
+            <button class="btn btn-ghost" style="margin-top: auto; color: #ef4444; border-color: rgba(239, 68, 68, 0.2);" onclick="location.href='index.html'">Logout</button>
+        </aside>
+
+        <main style="flex: 1; padding: 50px;">
+            <div class="animate-card">
+                <h1>Application Management</h1>
+                <p style="color: var(--text-dim); margin-bottom: 30px;">Review and approve internship requests.</p>
+                
+                <div class="glass-card" style="max-width: 100%; padding: 0; overflow: hidden;">
+                    <table style="width: 100%; border-collapse: collapse;">
+                        <thead>
+                            <tr style="background: rgba(255,255,255,0.03);">
+                                <th style="padding: 20px; text-align: left; color: var(--text-dim);">STUDENT</th>
+                                <th style="padding: 20px; text-align: left; color: var(--text-dim);">COLLEGE</th>
+                                <th style="padding: 20px; text-align: left; color: var(--text-dim);">DOMAIN</th>
+                                <th style="padding: 20px; text-align: left; color: var(--text-dim);">STATUS</th>
+                                <th style="padding: 20px; text-align: left; color: var(--text-dim);">ACTION</th>
+                            </tr>
+                        </thead>
+                        <tbody id="table"></tbody>
+                    </table>
+                </div>
+            </div>
+        </main>
+    </div>
+    <script src="admin.js"></script>
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Admin Login | InternFlow</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="centered-container">
+        <div class="glass-card animate-card">
+            <div style="text-align: center; margin-bottom: 30px;">
+                <div style="font-size: 40px; margin-bottom: 10px;">🛡️</div>
+                <h2 style="letter-spacing: -0.5px;">Admin Console</h2>
+                <p style="color: var(--text-dim); font-size: 14px;">Authorized access only</p>
+            </div>
+            
+            <label style="font-size: 12px; color: var(--text-dim); margin-bottom: 8px; display: block;">ADMIN EMAIL</label>
+            <input id="email" type="email" placeholder="admin@gmail.com">
+            
+            <label style="font-size: 12px; color: var(--text-dim); margin-bottom: 8px; display: block;">PASSWORD</label>
+            <input id="password" type="password" placeholder="••••••••">
+            
+            <button class="btn btn-primary" onclick="adminLogin()">Access Dashboard</button>
+            
+            <a href="index.html" class="btn btn-ghost" style="margin-top: 12px; font-size: 13px;">← Back to Home</a>
+        </div>
+    </div>
+    <script src="admin.js"></script>
+</body>
+</html>

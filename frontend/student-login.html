@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Student Login | InternFlow</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="centered-container">
+        <div class="glass-card animate-card">
+            <h2 style="margin-bottom: 10px;">Student Login</h2>
+            <p style="color: var(--text-dim); margin-bottom: 30px;">Enter your credentials to access your dashboard.</p>
+            
+            <input id="email" type="email" placeholder="Email Address">
+            <input id="password" type="password" placeholder="Password">
+
+            <button class="btn btn-primary" onclick="loginStudent()">Login to Portal</button>
+            
+            <p style="text-align: center; margin-top: 20px; font-size: 14px; color: var(--text-dim);">
+                New intern? <a href="student-register.html" style="color: var(--primary); text-decoration: none;">Create an account</a>
+            </p>
+        </div>
+    </div>
+    <script src="student.js"></script>
+</body>
+</html>

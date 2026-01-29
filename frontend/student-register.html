@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Student Registration | InternFlow</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="centered-container">
+        <div class="glass-card animate-card">
+            <h2 style="margin-bottom: 8px;">Create Account</h2>
+            <p style="color: var(--text-dim); margin-bottom: 25px; font-size: 14px;">Join the internship program today.</p>
+            
+            <input id="name" type="text" placeholder="Full Name">
+            <input id="email" type="email" placeholder="Email Address">
+            <input id="password" type="password" placeholder="Create Password">
+            <input id="college" type="text" placeholder="University/College Name">
+            <input id="domain" type="text" placeholder="Internship Domain (e.g., Web Dev)">
+            
+            <button class="btn btn-primary" onclick="registerStudent()">Register Now</button>
+            
+            <p style="text-align: center; margin-top: 20px; font-size: 14px; color: var(--text-dim);">
+                Already have an account? <a href="student-login.html" style="color: var(--primary); text-decoration: none; font-weight: 600;">Login</a>
+            </p>
+        </div>
+    </div>
+    <script src="student.js"></script>
+</body>
+</html>
